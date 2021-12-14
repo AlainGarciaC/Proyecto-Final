@@ -1,15 +1,16 @@
-header {
-    @media screen and (min-width: 500px) {
-        flex-direction: column;
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: #F09A9D;
     }
 }
-body {
-    @media screen and (min-width: 500px) {
-        flex-direction: column;
+
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+    body {
+        background-color: #f5cf8e;
     }
 }
-footer {
-    @media screen and (min-width: 500px) {
-        flex-direction: column;
+
+@media only screen and (min-width: 979px) {
+    body {
+        background-color: #b2d6ff;
     }
-}
