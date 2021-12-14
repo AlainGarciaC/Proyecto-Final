@@ -1,0 +1,157 @@
+header {
+  margin: 20px;
+  padding: 20px; }
+  header nav {
+    background-color: white;
+    border-radius: 40px; }
+    header nav div ul li {
+      color: rgba(0, 17, 255, 0.651);
+      font-size: 30px; }
+
+header div h1 {
+  margin: 30px;
+  color: black;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Alfa Slab One', cursive; }
+
+.Titulo:hover {
+  animation: changColor 3s; }
+
+@keyframes changColor {
+  100% {
+    color: red; } }
+
+main .introduccion {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  main .introduccion div, main .introduccion .video-new {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center; }
+    main .introduccion div div, main .introduccion div .lorem, main .introduccion .video-new div, main .introduccion .video-new .lorem {
+      margin: 50px;
+      padding: 50px;
+      color: black;
+      font-size: 1.7rem; }
+      main .introduccion div div .resalto, main .introduccion div .lorem .resalto, main .introduccion .video-new div .resalto, main .introduccion .video-new .lorem .resalto {
+        color: black;
+        font-weight: bold; }
+
+.gridSection {
+  margin: 50px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 600px;
+  grid-template-areas: 'div-one div-two div-three';
+  display: flex;
+  justify-content: space-around; }
+
+.gridItem1 {
+  grid-area: div-one;
+  transition: all 1.5s; }
+
+.gridItem1:hover {
+  transform: scale(1.2); }
+
+.gridItem2 {
+  grid-area: div-two;
+  transition: all 1.5s; }
+
+.gridItem2:hover {
+  transform: scale(1.2); }
+
+.gridItem3 {
+  grid-area: div-three;
+  transition: all 1.5s; }
+
+.gridItem3:hover {
+  transform: scale(1.2); }
+
+.imgItem1 {
+  width: 100%;
+  height: 100%; }
+
+.imgItem2 {
+  width: 100%;
+  height: 100%; }
+
+.imgItem3 {
+  width: 100%;
+  height: 100%; }
+
+.carousel {
+  display: flex;
+  justify-content: center; }
+
+.linke {
+  width: 50px;
+  height: 50px; }
+
+.insta {
+  width: 50px;
+  height: 50px; }
+
+.facebook {
+  width: 100px;
+  height: 50px; }
+
+.twitter {
+  width: 100px;
+  height: 50px; }
+
+.youtube {
+  width: 50px;
+  height: 50px; }
+
+/* estilos grid */
+.mainEnlace {
+  margin: 50px;
+  padding: 50px;
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 50px);
+  grid-template-areas: "enlace1 enlace2 enlace3 enlace4 enlace5" "Enlace Enlace Enlace Enlace Enlace"; }
+
+@media only screen and (max-width: 480px) and (max-width: 1052) {
+  header {
+    width: 100%;
+    flex-direction: column; } }
+
+.enlace1 {
+  grid-area: enlace1; }
+
+.enlace2 {
+  grid-area: enlace2; }
+
+.enlace3 {
+  grid-area: enlace3; }
+
+.enlace4 {
+  grid-area: enlace4; }
+
+.enlace5 {
+  grid-area: enlace5; }
+
+body {
+  background-image: url("../multimedia/pngtree-simple-and-beautiful-watercolor-contrast-color-smudge-texture-watercolor-background-image_469268.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+@media screen and (min-width: 500px) {
+  header {
+    flex-direction: column; } }
+
+@media screen and (min-width: 500px) {
+  body {
+    flex-direction: column; } }
+
+@media screen and (min-width: 500px) {
+  footer {
+    flex-direction: column; } }

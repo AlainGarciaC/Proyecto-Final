@@ -1,0 +1,280 @@
+/* Selector universad */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.html {
+    font-size: 18px;
+}
+/* Titulo */
+.logo {
+    display: grid;
+    justify-content: space-around;
+}
+.Titulo:hover {
+    animation: changColor 3s;
+}
+@keyframes changColor {
+    100% {
+        color: red;
+    }
+}
+
+.Titulo {
+    color: black;
+    font-size: 5rem;
+    font-family: 'Alfa Slab One', cursive;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.logo-arch {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 100px;
+}
+.logo {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+.principio-logo {
+    display: flex;
+    justify-content: start;
+}
+.principio-titulo {
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    background-color: rgb(171, 209, 226);
+    border-radius: 20px;
+}
+/* Fin de titulo */
+
+/* Concepto */
+.lorem {
+    margin: 50px;
+    padding: 50px;
+    color: var(--colorPrincipal);
+    font-size: 1.7rem;
+}
+.resalto {
+    color: var(--colorPrincipal);
+    font-weight: bold;
+}
+/* Grid images */
+.gridSection {
+    margin: 50px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px;
+    grid-template-areas: 'div-one div-two div-three';  
+}
+.gridItem1 {
+    grid-area: div-one;
+    transition: all 1.5s;
+}
+.gridItem1:hover {
+    transform: scale(2);
+}
+.gridItem2 {
+    grid-area: div-two;
+    transition: all 1.5s;
+}
+.gridItem2:hover {
+    transform: scale(2);
+}
+.gridItem3 {
+    grid-area: div-three;
+    transition: all 1.5s;
+}
+.gridItem3:hover {
+    transform: scale(2);
+}
+.imgItem1 {
+    width: 100%;
+    height: 100%;
+}
+.imgItem2 {
+    width: 100%;
+    height: 100%;
+}
+.imgItem3 {
+    width: 100%;
+    height: 100%;
+}
+
+/* Fin Grid Images */
+.contacto {
+    color: red;
+    font-size: var(--fontSizes);
+}
+/* header */
+
+header nav ul li {
+    list-style-type: none;
+    font-size: 1.8rem;
+    color: var(--colorPrincipal);
+    font-family: 'roboto-light';
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'roboto-light';
+    src: url('roboto/Roboto-Light.ttf');
+    font-display: swap;
+}
+
+#Enlaces, .container, .logo {
+    background-color: white; width: 100%;
+    font-family: 'roboto-light';
+    font-size: 1rem;
+}
+
+header nav ul li {
+    padding: 5px;
+}
+
+.menu-principal {
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(126, 215, 226, 0.993);
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-principal:hover {
+    animation: changeColor 5s;
+}
+@keyframes changeColor {
+    0% {
+        background-color: cornflowerblue;
+    }
+    25% {
+        background-color: violet;
+    }
+    50% {
+        background-color: turquoise;
+    }
+    75% {
+        background-color: yellowgreen;
+    }
+    100% {
+        background-color: teal;
+    }
+}
+
+/* Fin de header */
+
+/* Footer */
+
+.Enlace {
+    color: brown;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+/* Fin de footer */
+
+body {
+    background-image: url('multimedia/pngtree-simple-and-beautiful-watercolor-contrast-color-smudge-texture-watercolor-background-image_469268.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*MULTIMEDIA*/
+.introduccion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.video-new {
+    width: 50%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Fin de multimedia*/
+
+:root {
+    --colorPrincipal: black;
+    --fontSizes: 18px
+}
+
+/*Enlaces */
+.linke {
+    width: 50px;
+    height: 50px;
+}
+.insta {
+    width: 50px;
+    height: 50px;
+}
+.facebook {
+    width: 100px;
+    height: 50px;
+}
+.twitter {
+    width: 100px;
+    height: 50px;
+}
+.youtube {
+    width: 50px;
+    height: 50px;
+}
+
+/* estilos grid */
+.mainEnlace {
+    margin: 50px;
+    padding: 50px;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    grid-template-areas: "enlace1 enlace2 enlace3 enlace4 enlace5"
+                         "Enlace Enlace Enlace Enlace Enlace" 
+         
+}
+@media only screen and (max-width: 480px) and (max-width: 1052){
+    header {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+}
+.enlace1 {
+    grid-area: enlace1;
+}
+.enlace2 {
+    grid-area: enlace2;
+}
+.enlace3 {
+    grid-area: enlace3;
+}
+.enlace4 {
+    grid-area: enlace4;
+}
+.enlace5 {
+    grid-area: enlace5;
+}
+/* Fin grid*/
+
+.card {
+    border-radius: 50px;
+}
+.img1 {
+    width: 25%;
+    height: 100px;
+}

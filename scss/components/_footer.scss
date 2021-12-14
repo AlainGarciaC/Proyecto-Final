@@ -1,0 +1,54 @@
+.linke {
+    width: 50px;
+    height: 50px;
+}
+.insta {
+    width: 50px;
+    height: 50px;
+}
+.facebook {
+    width: 100px;
+    height: 50px;
+}
+.twitter {
+    width: 100px;
+    height: 50px;
+}
+.youtube {
+    width: 50px;
+    height: 50px;
+}
+
+/* estilos grid */
+.mainEnlace {
+    margin: 50px;
+    padding: 50px;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    grid-template-areas: "enlace1 enlace2 enlace3 enlace4 enlace5"
+                         "Enlace Enlace Enlace Enlace Enlace" 
+         
+}
+@media only screen and (max-width: 480px) and (max-width: 1052){
+    header {
+        width: 100%;
+        flex-direction: column;
+    }  
+}
+.enlace1 {
+    grid-area: enlace1;
+}
+.enlace2 {
+    grid-area: enlace2;
+}
+.enlace3 {
+    grid-area: enlace3;
+}
+.enlace4 {
+    grid-area: enlace4;
+}
+.enlace5 {
+    grid-area: enlace5;
+}

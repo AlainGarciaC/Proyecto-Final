@@ -1,0 +1,23 @@
+main {
+    .introduccion {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div, .video-new {
+            width: 50%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            div, .lorem {
+                margin: 50px;
+                padding: 50px;
+                color:black;
+                font-size: 1.7rem;
+                .resalto {
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

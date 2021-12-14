@@ -1,0 +1,36 @@
+header {
+    margin: 20px;
+    padding: 20px;
+    nav {
+        background-color:white;
+        border-radius: 40px;
+        div {
+            ul {
+                li {
+                    color: rgba(0, 17, 255, 0.651); 
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+header {
+    div {
+        h1 {
+            margin: 30px;
+            color:black;
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            font-family: 'Alfa Slab One', cursive;
+        }
+    }
+} 
+.Titulo:hover {
+    animation: changColor 3s;
+}
+@keyframes changColor {
+    100% {
+        color: red;
+    }
+} 

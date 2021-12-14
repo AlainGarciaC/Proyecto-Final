@@ -1,0 +1,43 @@
+.gridSection {
+    margin: 50px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 600px;
+    grid-template-areas: 'div-one div-two div-three'; 
+    display: flex;
+    justify-content: space-around;
+}
+.gridItem1 {
+    grid-area: div-one;
+    transition: all 1.5s;
+}
+.gridItem1:hover {
+    transform: scale(1.2);
+}
+.gridItem2 {
+    grid-area: div-two;
+    transition: all 1.5s;
+}
+.gridItem2:hover {
+    transform: scale(1.2);
+}
+.gridItem3 {
+    grid-area: div-three;
+    transition: all 1.5s;
+}
+.gridItem3:hover {
+    transform: scale(1.2);
+}
+.imgItem1 {
+    width: 100%;
+    height: 100%;
+}
+.imgItem2 {
+    width: 100%;
+    height: 100%;
+}
+.imgItem3 {
+    width: 100%;
+    height: 100%;
+}
